@@ -1,0 +1,29 @@
+# Godot
+.godot/
+*.translation
+export_presets.cfg
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Environment Variables & Secrets (CRITICAL)
+.env
+.env.*
+! .env.example
+
+# Database
+*.db
+*.sqlite
+dev.db
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
