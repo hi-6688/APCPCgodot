@@ -22,7 +22,7 @@ async def on_ready():
     await tree.sync()
     logger.info(f'Logged in as {client.user}!')
 
-@tree.command(name="battle", description="Start a new card battle!")
+@tree.command(name="battle", description="寶可夢對戰測試中，敬請期待")
 async def battle(interaction: discord.Interaction):
     # 產生房間 ID 與 Token
     room_id = secrets.token_hex(2).upper() # e.g. "A1B2"

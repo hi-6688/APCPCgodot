@@ -3,27 +3,62 @@
 *.translation
 export_presets.cfg
 
-# Python / Backend
+# 環境變數檔案（包含敏感資訊）
+.env
+*.env
+
+# Python 相關
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
 venv/
-.venv/
 env/
+ENV/
 
-# Environment Variables & Secrets (CRITICAL)
-.env
-.env.*
-! .env.example
+# 日誌檔案
+*.log
+logs/
 
-# Database
-*.db
-*.sqlite
-dev.db
+# Terraria 伺服器檔案
+*.wld
+*.wld.bak
+Players/
+Worlds/
 
-# OS Generated
+# Minecraft 伺服器檔案
+*.jar
+bedrock-server.zip
+bedrock_server
+bedrock_server_mod.exe
+bedrock_server.pdb
+world/
+worlds/
+world_nether/
+world_the_end/
+minecraft/behavior_packs/
+minecraft/resource_packs/
+minecraft/definitions/
+logs/
+crash-reports/
+
+# SteamCMD 下載的檔案
+steamcmd/
+
+# 系統檔案
 .DS_Store
 Thumbs.db
 
-# VS Code
-.vscode/
+# Backups
+terraria_backup_*/
+
+# Large Binaries and Archives
+*.zip
+*.tar.gz
+*.dll
+*.exe
+*.bin.x86_64
+
+# Webhook Secret (敏感資訊)
+.webhook_secret
